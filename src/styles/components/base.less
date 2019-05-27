@@ -1,0 +1,81 @@
+@import "./normalize";
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #f0f2f5;
+  position: relative;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+.product-img-thumb {
+  margin: 4px 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+}
+
+.ivu-btn-text {
+  &.edit-btn {
+    color: #409FFF !important;
+  }
+  &.remove-btn {
+    color: #fc504d !important;
+  }
+}
+
+.ivu-input {
+  &.ivu-input-disabled {
+    color: #333333;
+  }
+}
+
+
+/* router-active */
+
+/* recommended css code for vue-svgicon */
+.svg-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: inherit;
+  vertical-align: middle;
+  fill: none;
+  stroke: currentColor;
+}
+
+.svg-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.svg-up {
+  /* 默认 */
+  transform: rotate(0deg);
+}
+
+.svg-right {
+  transform: rotate(90deg);
+}
+
+.svg-down {
+  transform: rotate(180deg);
+}
+
+.svg-left {
+  transform: rotate(-90deg);
+}

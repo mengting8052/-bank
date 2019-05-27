@@ -1,0 +1,59 @@
+{
+  "name": "gvt-gms",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "PassionZale <372470745@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "svg": "vsvg -s ./static/svg-icons -t ./src/components/icons",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "deploy": "cross-env NODE_ENV=deploy webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gvt-hero": "^1.2.7",
+    "html5-image-compress": "^0.1.3",
+    "iview": "^2.13.0",
+    "js-md5": "^0.7.3",
+    "moment": "^2.22.2",
+    "numeral": "^2.0.6",
+    "vue": "^2.5.11",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "wangeditor": "^3.1.1",
+    "vue-i18n": "^8.7.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.7.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.6.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.4",
+    "file-saver": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "script-loader": "^0.7.2",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^13.0.5",
+    "vue-svgicon": "^3.2.0",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1",
+    "xlsx": "^0.14.3"
+  }
+}
